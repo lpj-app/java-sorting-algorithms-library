@@ -1,9 +1,10 @@
 package sortingAlgorithmsLibrary;
 
 public class arraySelectionsort {
-	
-	public arraySelectionsort(){}
-	
+
+	public arraySelectionsort() {
+	}
+
 	public int[] intSelectionsort(int[] x) {
 
 		long start = System.nanoTime();
@@ -24,19 +25,27 @@ public class arraySelectionsort {
 			}
 
 			if (y != i) {
-				
 				tmp[y] = tmp[i];
-				tmp[i] = tmp[z];
+				tmp[i] = z;
 			}
 			runs++;
-			System.out.println(runs + ". " + tmp);
+			System.out.print(runs + ". ");
+			System.out.print("[ ");
+			for (int n = 0; n < tmp.length; n++) {
+				System.out.print(tmp[n] + ", ");
+			}
+			System.out.println("]");
 		}
 
 		long end = System.nanoTime();
 		System.out.println("\nSorting process lasted: " + (end - start) / 1000000000 + " seconds, "
 				+ (end - start) / 1000000 + " milliseconds, " + (end - start) + " nanoseconds. \n");
 		System.out.println("Sorted list of Integers in " + runs + " runs:");
-		System.out.print(x);
+		System.out.print("[ ");
+		for (int i = 0; i < tmp.length; i++) {
+			System.out.print(tmp[i] + ", ");
+		}
+		System.out.println("]");
 
 		x = tmp;
 		return x;
@@ -53,28 +62,36 @@ public class arraySelectionsort {
 
 		for (int i = 0; i < length - 1; i++) {
 			int y = i;
-			double z = tmp[y];
+			int z = (int) tmp[y];
 			for (int j = i + 1; j < length; j++) {
 				if (tmp[j] < z) {
 					y = j;
-					z = tmp[y];
+					z = (int) tmp[y];
 				}
 			}
 
 			if (y != i) {
-				
 				tmp[y] = tmp[i];
-				tmp[i] = tmp[(int) z];
+				tmp[i] = z;
 			}
 			runs++;
-			System.out.println(runs + ". " + tmp);
+			System.out.print(runs + ". ");
+			System.out.print("[ ");
+			for (int n = 0; n < tmp.length; n++) {
+				System.out.print(tmp[n] + ", ");
+			}
+			System.out.println("]");
 		}
 
 		long end = System.nanoTime();
 		System.out.println("\nSorting process lasted: " + (end - start) / 1000000000 + " seconds, "
 				+ (end - start) / 1000000 + " milliseconds, " + (end - start) + " nanoseconds. \n");
 		System.out.println("Sorted list of Integers in " + runs + " runs:");
-		System.out.print(x);
+		System.out.print("[ ");
+		for (int i = 0; i < tmp.length; i++) {
+			System.out.print(tmp[i] + ", ");
+		}
+		System.out.println("]");
 
 		x = tmp;
 		return x;
@@ -91,28 +108,36 @@ public class arraySelectionsort {
 
 		for (int i = 0; i < length - 1; i++) {
 			int y = i;
-			float z = tmp[y];
+			int z = (int) tmp[y];
 			for (int j = i + 1; j < length; j++) {
 				if (tmp[j] < z) {
 					y = j;
-					z = tmp[y];
+					z = (int) tmp[y];
 				}
 			}
 
 			if (y != i) {
-				
 				tmp[y] = tmp[i];
-				tmp[i] = tmp[(int) z];
+				tmp[i] = z;
 			}
 			runs++;
-			System.out.println(runs + ". " + tmp);
+			System.out.print(runs + ". ");
+			System.out.print("[ ");
+			for (int n = 0; n < tmp.length; n++) {
+				System.out.print(tmp[n] + ", ");
+			}
+			System.out.println("]");
 		}
 
 		long end = System.nanoTime();
 		System.out.println("\nSorting process lasted: " + (end - start) / 1000000000 + " seconds, "
 				+ (end - start) / 1000000 + " milliseconds, " + (end - start) + " nanoseconds. \n");
 		System.out.println("Sorted list of Integers in " + runs + " runs:");
-		System.out.print(x);
+		System.out.print("[ ");
+		for (int i = 0; i < tmp.length; i++) {
+			System.out.print(tmp[i] + ", ");
+		}
+		System.out.println("]");
 
 		x = tmp;
 		return x;
@@ -129,31 +154,39 @@ public class arraySelectionsort {
 
 		for (int i = 0; i < length - 1; i++) {
 			int y = i;
-			long z = tmp[y];
+			int z = (int) tmp[y];
 			for (int j = i + 1; j < length; j++) {
 				if (tmp[j] < z) {
 					y = j;
-					z = tmp[y];
+					z = (int) tmp[y];
 				}
 			}
 
 			if (y != i) {
-				
 				tmp[y] = tmp[i];
-				tmp[i] = tmp[(int) z];
+				tmp[i] = z;
 			}
 			runs++;
-			System.out.println(runs + ". " + tmp);
+			System.out.print(runs + ". ");
+			System.out.print("[ ");
+			for (int n = 0; n < tmp.length; n++) {
+				System.out.print(tmp[n] + ", ");
+			}
+			System.out.println("]");
 		}
 
 		long end = System.nanoTime();
 		System.out.println("\nSorting process lasted: " + (end - start) / 1000000000 + " seconds, "
 				+ (end - start) / 1000000 + " milliseconds, " + (end - start) + " nanoseconds. \n");
 		System.out.println("Sorted list of Integers in " + runs + " runs:");
-		System.out.print(x);
+		System.out.print("[ ");
+		for (int i = 0; i < tmp.length; i++) {
+			System.out.print(tmp[i] + ", ");
+		}
+		System.out.println("]");
 
 		x = tmp;
 		return x;
 	}
-	
+
 }

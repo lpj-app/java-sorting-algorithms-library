@@ -23,7 +23,7 @@ public class arrayListBubblesort {
 					tmp.set(j - 1, tmp.get(j));
 					tmp.set(j, help);
 					runs++;
-					System.out.println(runs + ". " + tmp);
+					System.out.println(runs + ". " + tmp+"\n");
 				}
 			}
 		}
@@ -32,7 +32,7 @@ public class arrayListBubblesort {
 		System.out.println("\nSorting process lasted: " + (end - start) / 1000000000 + " seconds, "
 				+ (end - start) / 1000000 + " milliseconds, "+ (end - start)+" nanoseconds. \n");
 		System.out.println("Sorted list of Integers in " + runs + " runs:");
-		System.out.print(x);
+		System.out.print(x+"\n");
 
 		x = tmp;
 		return x;

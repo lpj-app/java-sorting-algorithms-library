@@ -21,7 +21,7 @@ public class arrayBubblesort {
 					tmp[j-1] = tmp[j];
 					tmp[j] = help;
 					runs++;
-					System.out.print(runs + ". ");
+					System.out.print("\n"+runs + ". ");
 					System.out.print("[ ");
 					for(int n = 0; n< tmp.length; n++) {
 					  System.out.print(tmp[n]+", ");
@@ -39,7 +39,7 @@ public class arrayBubblesort {
 		for(int i = 0; i< tmp.length; i++) {
 		  System.out.print(tmp[i]+", ");
 		}
-		System.out.println("]");
+		System.out.println("]\n");
 
 		x = tmp;
 		return x;
