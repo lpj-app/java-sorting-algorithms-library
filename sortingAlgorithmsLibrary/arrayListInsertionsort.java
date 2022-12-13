@@ -1,63 +1,59 @@
-package Bubblesort;
+package InsertionSort;
 
 import java.util.ArrayList;
 
-public class arrayListBubblesort {
+public class arrayListInsertionsort {
 
-	public arrayListBubblesort() {}
-
-	public ArrayList<Integer> intBubblesort(ArrayList<Integer> x) {
+	arrayListInsertionsort(){}
+	
+	public ArrayList<Integer> intInsertionsort(ArrayList<Integer> x) {
 
 		long start = System.nanoTime();
 
 		ArrayList<Integer> tmp = x;
 
-		int l = x.size();
-		int help = 0;
 		int runs = 0;
 
-		for (int i = 0; i < l; i++) {
-			for (int j = 1; j < (l - i); j++) {
-				if (tmp.get(j) < tmp.get(j - 1)) {
-					help = tmp.get(j - 1);
-					tmp.set(j - 1, tmp.get(j));
-					tmp.set(j, help);
-					runs++;
-					System.out.println(runs + ". " + tmp+"\n");
-				}
+		for (int i = 1; i < tmp.size(); i++) {
+			int help = tmp.get(i);
+			int j = i;
+			while (j > 0 && help < tmp.get(j-1)) {
+				tmp.set(j, tmp.get(j-1));
+				j--;
 			}
+			tmp.set(j, help);
+			runs++;
+			System.out.println(runs + ". " + tmp+"\n");
 		}
 
 		long end = System.nanoTime();
 		System.out.println("\nSorting process lasted: " + (end - start) / 1000000000 + " seconds, "
 				+ (end - start) / 1000000 + " milliseconds, "+ (end - start)+" nanoseconds. \n");
 		System.out.println("Sorted list of Integers in " + runs + " runs:");
-		System.out.print(x+"\n");
+		System.out.print(x);
 
 		x = tmp;
 		return x;
 	}
 
-	public ArrayList<Double> doubleBubblesort(ArrayList<Double> x) {
+	public ArrayList<Double> doubleInsertionsort(ArrayList<Double> x) {
 
 		long start = System.nanoTime();
 
 		ArrayList<Double> tmp = x;
 
-		int l = x.size();
-		double help = 0;
 		int runs = 0;
 
-		for (int i = 0; i < l; i++) {
-			for (int j = 1; j < (l - i); j++) {
-				if (tmp.get(j) < tmp.get(j - 1)) {
-					help = tmp.get(j - 1);
-					tmp.set(j - 1, tmp.get(j));
-					tmp.set(j, help);
-					runs++;
-					System.out.println(runs + ". " + tmp + "\n");
-				}
+		for (int i = 1; i < tmp.size(); i++) {
+			double help = tmp.get(i);
+			int j = i;
+			while (j > 0 && help < tmp.get(j-1)) {
+				tmp.set(j, tmp.get(j-1));
+				j--;
 			}
+			tmp.set(j, help);
+			runs++;
+			System.out.println(runs + ". " + tmp+"\n");
 		}
 
 		long end = System.nanoTime();
@@ -70,26 +66,24 @@ public class arrayListBubblesort {
 		return x;
 	}
 
-	public ArrayList<Float> floatBubblesort(ArrayList<Float> x) {
+	public ArrayList<Float> floatInsertionsort(ArrayList<Float> x) {
 
 		long start = System.nanoTime();
 
 		ArrayList<Float> tmp = x;
 
-		int l = x.size();
-		float help = 0;
 		int runs = 0;
 
-		for (int i = 0; i < l; i++) {
-			for (int j = 1; j < (l - i); j++) {
-				if (tmp.get(j) < tmp.get(j - 1)) {
-					help = tmp.get(j - 1);
-					tmp.set(j - 1, tmp.get(j));
-					tmp.set(j, help);
-					runs++;
-					System.out.println(runs + ". " + tmp + "\n");
-				}
+		for (int i = 1; i < tmp.size(); i++) {
+			float help = tmp.get(i);
+			int j = i;
+			while (j > 0 && help < tmp.get(j-1)) {
+				tmp.set(j, tmp.get(j-1));
+				j--;
 			}
+			tmp.set(j, help);
+			runs++;
+			System.out.println(runs + ". " + tmp+"\n");
 		}
 
 		long end = System.nanoTime();
@@ -102,26 +96,24 @@ public class arrayListBubblesort {
 		return x;
 	}
 
-	public ArrayList<Long> longBubblesort(ArrayList<Long> x) {
+	public ArrayList<Long> longInsertionsort(ArrayList<Long> x) {
 
 		long start = System.nanoTime();
 
 		ArrayList<Long> tmp = x;
 
-		int l = x.size();
-		long help = 0;
 		int runs = 0;
 
-		for (int i = 0; i < l; i++) {
-			for (int j = 1; j < (l - i); j++) {
-				if (tmp.get(j) < tmp.get(j - 1)) {
-					help = tmp.get(j - 1);
-					tmp.set(j - 1, tmp.get(j));
-					tmp.set(j, help);
-					runs++;
-					System.out.println(runs + ". " + tmp + "\n");
-				}
+		for (int i = 1; i < tmp.size(); i++) {
+			long help = tmp.get(i);
+			int j = i;
+			while (j > 0 && help < tmp.get(j-1)) {
+				tmp.set(j, tmp.get(j-1));
+				j--;
 			}
+			tmp.set(j, help);
+			runs++;
+			System.out.println(runs + ". " + tmp+"\n");
 		}
 
 		long end = System.nanoTime();
@@ -133,4 +125,5 @@ public class arrayListBubblesort {
 		x = tmp;
 		return x;
 	}
+	
 }

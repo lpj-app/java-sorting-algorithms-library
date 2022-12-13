@@ -1,4 +1,4 @@
-package sortingAlgorithmsLibrary;
+package Bubblesort;
 
 public class arrayBubblesort {
 
@@ -75,7 +75,7 @@ public class arrayBubblesort {
 		long end = System.nanoTime();
 		System.out.println("\nSorting process lasted: " + (end - start) / 1000000000 + " seconds, "
 				+ (end - start) / 1000000 + " milliseconds, "+ (end - start)+" nanoseconds. \n");
-		System.out.println("Sorted list of Integers in " + runs + " runs:");
+		System.out.println("Sorted list of Doubles in " + runs + " runs:");
 		System.out.print("[ ");
 		for(int i = 0; i< tmp.length; i++) {
 		  System.out.print(tmp[i]+", ");
@@ -116,7 +116,7 @@ public class arrayBubblesort {
 		long end = System.nanoTime();
 		System.out.println("\nSorting process lasted: " + (end - start) / 1000000000 + " seconds, "
 				+ (end - start) / 1000000 + " milliseconds, "+ (end - start)+" nanoseconds. \n");
-		System.out.println("Sorted list of Integers in " + runs + " runs:");
+		System.out.println("Sorted list of Floats in " + runs + " runs:");
 		System.out.print("[ ");
 		for(int i = 0; i< tmp.length; i++) {
 		  System.out.print(tmp[i]+", ");
@@ -156,7 +156,7 @@ public class arrayBubblesort {
 		long end = System.nanoTime();
 		System.out.println("\nSorting process lasted: " + (end - start) / 1000000000 + " seconds, "
 				+ (end - start) / 1000000 + " milliseconds, "+ (end - start)+" nanoseconds. \n");
-		System.out.println("Sorted list of Integers in " + runs + " runs:");
+		System.out.println("Sorted list of Longs in " + runs + " runs:");
 		System.out.print("[ ");
 		for(int i = 0; i< tmp.length; i++) {
 		  System.out.print(tmp[i]+", ");
