@@ -30,14 +30,14 @@ public class arrayListSelectionsort {
 				tmp.set(i, z);
 			}
 			runs++;
-			System.out.println(runs + ". " + tmp);
+			System.out.println("\n"+runs + ". " + tmp);
 		}
 
 		long end = System.nanoTime();
 		System.out.println("\nSorting process lasted: " + (end - start) / 1000000000 + " seconds, "
 				+ (end - start) / 1000000 + " milliseconds, " + (end - start) + " nanoseconds. \n");
 		System.out.println("Sorted list of Integers in " + runs + " runs:");
-		System.out.print(x);
+		System.out.print(x+"\n");
 
 		x = tmp;
 		return x;
@@ -67,14 +67,14 @@ public class arrayListSelectionsort {
 				tmp.set(i, z);
 			}
 			runs++;
-			System.out.println(runs + ". " + tmp);
+			System.out.println("\n"+runs + ". " + tmp);
 		}
 
 		long end = System.nanoTime();
 		System.out.println("\nSorting process lasted: " + (end - start) / 1000000000 + " seconds, "
 				+ (end - start) / 1000000 + " milliseconds, " + (end - start) + " nanoseconds. \n");
 		System.out.println("Sorted list of Doubles in " + runs + " runs:");
-		System.out.print(x);
+		System.out.print(x+"\n");
 
 		x = tmp;
 
@@ -105,14 +105,14 @@ public class arrayListSelectionsort {
 				tmp.set(i, z);
 			}
 			runs++;
-			System.out.println(runs + ". " + tmp);
+			System.out.println("\n"+runs + ". " + tmp);
 		}
 
 		long end = System.nanoTime();
 		System.out.println("\nSorting process lasted: " + (end - start) / 1000000000 + " seconds, "
 				+ (end - start) / 1000000 + " milliseconds, " + (end - start) + " nanoseconds. \n");
 		System.out.println("Sorted list of Floats in " + runs + " runs:");
-		System.out.print(x);
+		System.out.print(x+"\n");
 
 		x = tmp;
 
@@ -143,14 +143,14 @@ public class arrayListSelectionsort {
 				tmp.set(i, z);
 			}
 			runs++;
-			System.out.println(runs + ". " + tmp);
+			System.out.println("\n"+runs + ". " + tmp);
 		}
 
 		long end = System.nanoTime();
 		System.out.println("\nSorting process lasted: " + (end - start) / 1000000000 + " seconds, "
 				+ (end - start) / 1000000 + " milliseconds, " + (end - start) + " nanoseconds. \n");
 		System.out.println("Sorted list of Longs in " + runs + " runs:");
-		System.out.print(x);
+		System.out.print(x+"\n");
 
 		x = tmp;
 
