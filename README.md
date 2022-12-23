@@ -15,10 +15,25 @@ A library of various sorting algorithms implemented in Java.
 
 ## Features
 
-- Implements bubble sort, selection sort, insertion sort, merge sort, and quick sort.
 - Easy to use with a simple API.
-- Can sort arrays of integers or objects that implement the `Comparable` interface.
+- Sorts different lists of different data types with intermediate steps and visual end result
+--
+Supported lists, datatypes and algorithms
 
+Datatypes:
+  - Integer
+  - Double
+  - Float
+  - Long
+  
+List types: 
+  - Array
+  - ArrayList
+  
+List of all implemented algorithms:
+  - Bubblesort
+  - Selectionsort
+  - Insertionsort
 
 ## Screenshots
 
