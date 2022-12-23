@@ -84,5 +84,4 @@ To sort an array of integers using bubble sort:
 
 ## License
 
-The Java Sorting Algorithms Library is licensed under the Apache License, Version 2.0.
-A copy of the license can be found in the [LICENSE](LICENSE) file.
+Apache License Version 2.0 - For more Information check the [License](LICENSE)
