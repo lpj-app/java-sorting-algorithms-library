@@ -1,4 +1,4 @@
-package SelectionSort;
+package sortingAlgorithmsLibrary;
 
 public class arraySelectionsort {
 
