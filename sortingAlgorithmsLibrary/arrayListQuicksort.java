@@ -25,13 +25,13 @@ public class arrayListQuicksort {
 		return i;
 	}
 	
-	public void intSwap(ArrayList<Integer> arr, int i, int j) {
+	private void intSwap(ArrayList<Integer> arr, int i, int j) {
 		int k = arr.get(i);
 		arr.set(i, arr.get(j));
 		arr.set(j, k);
 	}
 	
-	public void intSort(ArrayList<Integer> arr, int lowIndex, int highIndex) {
+	private void intSort(ArrayList<Integer> arr, int lowIndex, int highIndex) {
 		if (lowIndex >= highIndex) {
 			return;
 		}
@@ -84,13 +84,13 @@ public class arrayListQuicksort {
 		return i;
 	}
 	
-	public void doubleSwap(ArrayList<Double> arr, int i, int j) {
+	private void doubleSwap(ArrayList<Double> arr, int i, int j) {
 		double k = arr.get(i);
 		arr.set(i, arr.get(j));
 		arr.set(j, k);
 	}
 	
-	public void doubleSort(ArrayList<Double> arr, int lowIndex, int highIndex) {
+	private void doubleSort(ArrayList<Double> arr, int lowIndex, int highIndex) {
 		if (lowIndex >= highIndex) {
 			return;
 		}
@@ -143,13 +143,13 @@ public class arrayListQuicksort {
 		return i;
 	}
 	
-	public void floatSwap(ArrayList<Float> arr, int i, int j) {
+	private void floatSwap(ArrayList<Float> arr, int i, int j) {
 		float k = arr.get(i);
 		arr.set(i, arr.get(j));
 		arr.set(j, k);
 	}
 	
-	public void floatSort(ArrayList<Float> arr, int lowIndex, int highIndex) {
+	private void floatSort(ArrayList<Float> arr, int lowIndex, int highIndex) {
 		if (lowIndex >= highIndex) {
 			return;
 		}
@@ -202,13 +202,13 @@ public class arrayListQuicksort {
 		return i;
 	}
 	
-	public void longSwap(ArrayList<Long> arr, int i, int j) {
+	private void longSwap(ArrayList<Long> arr, int i, int j) {
 		long k = arr.get(i);
 		arr.set(i, arr.get(j));
 		arr.set(j, k);
 	}
 	
-	public void longSort(ArrayList<Long> arr, int lowIndex, int highIndex) {
+	private void longSort(ArrayList<Long> arr, int lowIndex, int highIndex) {
 		if (lowIndex >= highIndex) {
 			return;
 		}

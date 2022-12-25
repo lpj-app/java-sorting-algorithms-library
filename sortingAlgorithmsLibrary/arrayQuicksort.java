@@ -27,13 +27,13 @@ public class arrayQuicksort {
 		return i;
 	}
 	
-	public void intSwap(int[] arr, int i, int j) {
+	private void intSwap(int[] arr, int i, int j) {
 		int k = arr[i];
 		arr[i] = arr[j];
 		arr[j] = k;
 	}
 	
-	public void intSort(int[] arr, int lowIndex, int highIndex) {
+	private void intSort(int[] arr, int lowIndex, int highIndex) {
 		if (lowIndex >= highIndex) {
 			return;
 		}
@@ -95,13 +95,13 @@ public class arrayQuicksort {
 		return i;
 	}
 	
-	public void doubleSwap(double[] arr, int i, int j) {
+	private void doubleSwap(double[] arr, int i, int j) {
 		double k = arr[i];
 		arr[i] = arr[j];
 		arr[j] = k;
 	}
 	
-	public void doubleSort(double[] arr, int lowIndex, int highIndex) {
+	private void doubleSort(double[] arr, int lowIndex, int highIndex) {
 		if (lowIndex >= highIndex) {
 			return;
 		}
@@ -163,13 +163,13 @@ public class arrayQuicksort {
 		return i;
 	}
 	
-	public void floatSwap(float[] arr, int i, int j) {
+	private void floatSwap(float[] arr, int i, int j) {
 		float k = arr[i];
 		arr[i] = arr[j];
 		arr[j] = k;
 	}
 	
-	public void floatSort(float[] arr, int lowIndex, int highIndex) {
+	private void floatSort(float[] arr, int lowIndex, int highIndex) {
 		if (lowIndex >= highIndex) {
 			return;
 		}
@@ -231,13 +231,13 @@ public class arrayQuicksort {
 		return i;
 	}
 	
-	public void longSwap(long[] arr, int i, int j) {
+	private void longSwap(long[] arr, int i, int j) {
 		long k = arr[i];
 		arr[i] = arr[j];
 		arr[j] = k;
 	}
 	
-	public void longSort(long[] arr, int lowIndex, int highIndex) {
+	private void longSort(long[] arr, int lowIndex, int highIndex) {
 		if (lowIndex >= highIndex) {
 			return;
 		}
