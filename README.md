@@ -34,6 +34,8 @@ List of all implemented algorithms:
   - Bubblesort
   - Selectionsort
   - Insertionsort
+  - Bogosort
+  - Quicksort
 
 ## Screenshots
 
