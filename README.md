@@ -36,6 +36,7 @@ List of all implemented algorithms:
   - Insertionsort
   - Bogosort
   - Quicksort
+  - Heapsort
 
 ## Screenshots
 
