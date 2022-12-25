@@ -17,7 +17,8 @@ A library of various sorting algorithms implemented in Java.
 
 - Easy to use with a simple API.
 - Sorts different lists of different data types with intermediate steps and visual end result
---
+
+
 Supported lists, datatypes and algorithms
 
 Datatypes:
