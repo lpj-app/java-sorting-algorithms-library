@@ -82,7 +82,7 @@ To sort an array of integers using bubble sort:
 
 ## Credits
 
-- Author: [@theunreallpj](https://github.com/theunreallpj)
+- Author: [@lpj-app](https://github.com/lpj-app)
 - Algorithm snippets: [www.happycoders.eu](https://www.happycoders.eu/de/algorithmen/sortieren-in-java/)
 
 
